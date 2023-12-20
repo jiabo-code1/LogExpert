@@ -1,0 +1,15 @@
+baseline:
+    messages = [{"role": "system", "content": "You are an helpful assistant."}, {"role": "user",
+    "content": f'''My system output an error log. You should give the executable steps to fix the error log.
+     The error log:{log}'''}, ]
+
+
+
+
+
+LogExpert:    messages = [{"role": "system", "content": "You are an helpful assistant."}, {"role": "user",
+                                                                                 "content": f'''My system output an error log. You should give the executable steps to fix the error log.
+     I will provide you with the error log and some examples including [several similar error logs and their solutions]. 
+     Some of these [several similar error logs and their solutions] may be helpful in resolving the error log or not. 
+     Several similar error logs and their solutions:{result}
+     The error log:{log}'''}, ]
